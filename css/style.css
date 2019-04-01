@@ -1,0 +1,9 @@
+.container div[class*=col] {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
