@@ -86,4 +86,36 @@ body {
   height: 15px;
 }
 
+.features {
+  padding: 70px 0;
+}
+.features .fleex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.features .fleex .feat {
+  width: 250px;
+  margin-bottom: 30px;
+  text-align: center;
+  margin: 0 15px;
+}
+.features .fleex .feat .fimg span {
+  font-size: 50px;
+  color: #27ae62;
+}
+.features .fleex .feat .finfo h3 {
+  margin: 7px;
+}
+.features .fleex .feat .finfo p {
+  font-size: 18px;
+  text-align: justify;
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .features .fleex {
+    justify-content: space-between;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -109,3 +109,39 @@ body {
     }
 }
 // bootstrap carousel (slider)
+// features
+.features { 
+    padding: 70px 0;
+    
+    .fleex {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: space-around;
+        .feat {
+            width:250px;
+            margin-bottom: 30px;
+            text-align: center;
+            margin: 0 15px;
+            .fimg span { 
+                font-size: 50px;
+                color: $maincolor;
+            }
+            .finfo {
+                h3 {
+                    margin: 7px;
+                }
+                p {
+                    font-size: 18px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    @media (min-width: 991px) and (max-width: 1199px) {
+        .fleex {
+            justify-content: space-between;
+        }
+    }
+}
+// features
