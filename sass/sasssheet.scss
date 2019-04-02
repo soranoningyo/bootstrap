@@ -80,32 +80,34 @@ body {
 }
 // bootstrap nav
 // bootstrap carousel (slider)
-.carousel-inner{ 
-    &> .item {
-        &> img {
-            width: 100%;
+#carousel-example-generic{
+    .carousel-inner{ 
+        &> .item {
+            &> img {
+                width: 100%;
+            }
+            .carousel-caption {
+                top: 250px;
+                line-height: 1.7 !important;
+            }
         }
-        .carousel-caption {
-            top: 250px;
-            line-height: 1.7 !important;
+        .carousel-control {
+            span.glyphicon-chevron-left,span.glyphicon-chevron-right {
+                color: $maincolor;
+            }
         }
     }
-    .carousel-control {
-        span.glyphicon-chevron-left,span.glyphicon-chevron-right {
-            color: $maincolor;
+    .carousel-indicators {
+        li {
+            border: 2px solid white;
+            width: 15px;
+            height: 15px;
         }
-    }
-}
-.carousel-indicators {
-    li {
-        border: 2px solid white;
-        width: 15px;
-        height: 15px;
-    }
-    li.active {
-        background-color: $maincolor;
-        width: 15px;
-        height: 15px;
+        li.active {
+            background-color: $maincolor;
+            width: 15px;
+            height: 15px;
+        }
     }
 }
 // bootstrap carousel (slider)
@@ -145,3 +147,52 @@ body {
     }
 }
 // features
+// testimonials
+.testi {
+    padding: 70px 0;
+    background-image: url('../images/tbg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    h2 {font-weight: bold;font-size: 35px;text-align: center;margin: 0 0 30px;}
+    .carousel-inner {
+        min-height: 170px;
+        .item {
+            q {
+                line-height: 1.7;
+                text-align: center;
+            }
+            span {
+                color: $maincolor;
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+    }
+    .carousel-indicators {
+        margin: 10px auto 0;
+        position: static;
+        width: 100%;
+        li {
+            width: 70px;
+            height: 70px;
+            margin: 0 5px;
+            text-indent: 0;
+            background-color: none;
+            border-radius: 50%;
+            border: 4px solid #572BA6;
+            overflow: hidden;
+            @include transition(all,1s ,ease-in-out);
+            opacity: 0.5;
+            img {
+                max-width: 100%;
+            }
+        }
+        li.active {
+            opacity: 1;
+            border: 4px solid $maincolor;
+        }
+    }
+}
+//testimonials
