@@ -10,19 +10,18 @@ $navcolor : #101b24;
 *{text-transform: capitalize}
 body {
     height: 4000px;
-    padding-top: 50px;
 }
 
 // bootstrap nav
 
 .navbar { // main nav
-    border-radius: 0px 40px;
-    overflow: hidden;
+    border-radius: 0px 0 0 40px;
 }
 .navbar-inverse { //main nav style
 
-    background-color: $navcolor;
-    border-color: $navcolor;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid $navcolor;
+    
 
     .navbar-header {
         .navbar-brand { // brand
@@ -41,8 +40,12 @@ body {
     .navbar-nav { // nav content
         > li {
             font-size: 17px;
+            &:last-of-type {
+                overflow: hidden;
+
+            }
             &:hover  {
-                background-color: rgba(46, 60, 73, 0.8);
+                background-color: rgba(29, 41, 53, 0.8);
             }
         }
          > .active {
@@ -80,12 +83,16 @@ body {
 .carousel-inner{ 
     &> .item {
         &> img {
-            max-height: 600px;
             width: 100%;
         }
         .carousel-caption {
-            top: 180px;
+            top: 250px;
             line-height: 1.7 !important;
+        }
+    }
+    .carousel-control {
+        span.glyphicon-chevron-left,span.glyphicon-chevron-right {
+            color: $maincolor;
         }
     }
 }

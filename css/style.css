@@ -4,17 +4,15 @@
 
 body {
   height: 4000px;
-  padding-top: 50px;
 }
 
 .navbar {
-  border-radius: 0px 40px;
-  overflow: hidden;
+  border-radius: 0px 0 0 40px;
 }
 
 .navbar-inverse {
-  background-color: #101b24;
-  border-color: #101b24;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #101b24;
 }
 .navbar-inverse .navbar-header .navbar-brand {
   font-size: 25px;
@@ -31,8 +29,11 @@ body {
 .navbar-inverse .navbar-nav > li {
   font-size: 17px;
 }
+.navbar-inverse .navbar-nav > li:last-of-type {
+  overflow: hidden;
+}
 .navbar-inverse .navbar-nav > li:hover {
-  background-color: rgba(46, 60, 73, 0.8);
+  background-color: rgba(29, 41, 53, 0.8);
 }
 .navbar-inverse .navbar-nav > .active > a {
   background-color: #27ae62;
@@ -64,12 +65,14 @@ body {
 }
 
 .carousel-inner > .item > img {
-  max-height: 600px;
   width: 100%;
 }
 .carousel-inner > .item .carousel-caption {
-  top: 180px;
+  top: 250px;
   line-height: 1.7 !important;
+}
+.carousel-inner .carousel-control span.glyphicon-chevron-left, .carousel-inner .carousel-control span.glyphicon-chevron-right {
+  color: #27ae62;
 }
 
 .carousel-indicators li {
