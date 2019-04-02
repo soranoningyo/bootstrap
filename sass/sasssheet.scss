@@ -5,9 +5,12 @@
     -ms-transition: $type $duration $tfunction;
     transition: $type $duration $tfunction;
 }
+$maincolor: #27ae62;
+$navcolor : #101b24;
 *{text-transform: capitalize}
 body {
     height: 4000px;
+    padding-top: 50px;
 }
 
 // bootstrap nav
@@ -18,20 +21,20 @@ body {
 }
 .navbar-inverse { //main nav style
 
-    background-color: #101b24;
-    border-color: #101b24;
+    background-color: $navcolor;
+    border-color: $navcolor;
 
     .navbar-header {
         .navbar-brand { // brand
             font-size: 25px;
             &::first-letter{
-                color: #27ae62;
+                color: $maincolor;
                 background-color: rgb(28, 46, 61);
                 padding-left: 9px;
                 border-radius: 50% 0 0 50%;
             }
             &:hover,&:focus {
-                color: #27ae62;
+                color: $maincolor;
             }
         }
     }
@@ -44,7 +47,7 @@ body {
         }
          > .active {
               > a {
-                background-color: #27ae62;
+                background-color: $maincolor;
                 &:hover {
                     background-color: rgba(39, 174, 98,0.85)
                 }
@@ -52,12 +55,12 @@ body {
         }
     }
     .dropdown-menu { // services dromdown menu
-        background-color: #101b24;
-        border-top:3px solid #27ae62;
+        background-color: $navcolor;
+        border-top:3px solid $maincolor;
         min-width: 200px;
         .divider {
             height: 2px;
-            background-color: #27ae62;
+            background-color: $maincolor;
         }
         > li {
             > a {
@@ -66,10 +69,36 @@ body {
                 @include transition(padding,0.2s ,ease-in)
             }
             &:hover a {
-                color: #101b24;
+                color: $navcolor;
                 padding-left: 30px;
             }
         }
     }
 }
 // bootstrap nav
+// bootstrap carousel (slider)
+.carousel-inner{ 
+    &> .item {
+        &> img {
+            max-height: 600px;
+            width: 100%;
+        }
+        .carousel-caption {
+            top: 180px;
+            line-height: 1.7 !important;
+        }
+    }
+}
+.carousel-indicators {
+    li {
+        border: 2px solid white;
+        width: 15px;
+        height: 15px;
+    }
+    li.active {
+        background-color: $maincolor;
+        width: 15px;
+        height: 15px;
+    }
+}
+// bootstrap carousel (slider)

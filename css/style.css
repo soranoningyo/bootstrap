@@ -4,6 +4,7 @@
 
 body {
   height: 4000px;
+  padding-top: 50px;
 }
 
 .navbar {
@@ -60,6 +61,26 @@ body {
 .navbar-inverse .dropdown-menu > li:hover a {
   color: #101b24;
   padding-left: 30px;
+}
+
+.carousel-inner > .item > img {
+  max-height: 600px;
+  width: 100%;
+}
+.carousel-inner > .item .carousel-caption {
+  top: 180px;
+  line-height: 1.7 !important;
+}
+
+.carousel-indicators li {
+  border: 2px solid white;
+  width: 15px;
+  height: 15px;
+}
+.carousel-indicators li.active {
+  background-color: #27ae62;
+  width: 15px;
+  height: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
