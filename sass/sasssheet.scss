@@ -246,3 +246,15 @@ body {
     }
 }
 //prices
+//workers
+.workers {
+    background: url(../images/tbg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 70px 0;
+   .worker {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+//workers
