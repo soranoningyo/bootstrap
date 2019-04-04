@@ -229,9 +229,37 @@ body {
   background: url(../images/tbg.jpg) no-repeat center center fixed;
   background-size: cover;
   padding: 70px 0;
+  color: #eee0e0;
 }
 .workers .worker img {
-  max-width: 100%;
+  max-width: 70%;
+  border-radius: 50%;
+}
+.workers .worker h3 {
+  font-weight: bold;
+  font-size: 28px;
+}
+.workers .worker p {
+  color: #c1d3e2;
+}
+.workers .worker i {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 25px;
+  line-height: 45px;
+}
+.workers .worker i:first-of-type {
+  background-color: #e23b3b;
+}
+.workers .worker i:nth-of-type(2) {
+  background-color: #175bee;
+}
+.workers .worker i:nth-of-type(3) {
+  background-color: #17ceee;
+}
+.workers .worker i:nth-of-type(4) {
+  background-color: #006699;
 }
 
 /*# sourceMappingURL=style.css.map */
