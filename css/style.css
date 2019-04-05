@@ -3,7 +3,7 @@
 }
 
 body {
-  height: 4000px;
+  height: 7000px;
 }
 
 .navbar {
@@ -314,7 +314,7 @@ body {
   color: gray;
 }
 .statistics .overlaay .state i:hover {
-  color: #fff;
+  color: #27ae62;
 }
 
 .our-skills {
@@ -343,6 +343,34 @@ body {
 .our-skills .progressing .progress .progress-bar > div span {
   width: 75px;
   float: right;
+}
+
+.contact-us {
+  background: url(../images/05.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+.contact-us .ovarlaay {
+  padding: 70px 0;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+.contact-us .ovarlaay h2 {
+  margin: 5px 0 25px;
+}
+.contact-us .ovarlaay form input, .contact-us .ovarlaay form textarea {
+  background-color: rgba(82, 79, 79, 0.808);
+  border: none;
+  outline: none;
+}
+.contact-us .ovarlaay form textarea {
+  height: 110px;
+  resize: none;
+}
+.contact-us .ovarlaay form input::placeholder, .contact-us .ovarlaay form textarea::placeholder {
+  color: #fff;
+}
+.contact-us .ovarlaay form button {
+  height: 43px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,7 +16,7 @@ $maincolor: #27ae62;
 $navcolor : #101b24;
 *{text-transform: capitalize}
 body {
-    height: 4000px;
+    height: 7000px;
 }
 
 // bootstrap nav
@@ -324,7 +324,7 @@ body {
             i {
                 color:gray;
                 &:hover {
-                color: #fff;
+                color: $maincolor;
                 }
             }
         }
@@ -361,3 +361,30 @@ body {
     }
 }
 //ourskills
+// contact
+.contact-us {
+    background: url(../images/05.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    .ovarlaay {
+        padding: 70px 0;
+        background-color: rgba(0, 0, 0, 0.664);
+        h2 {margin: 5px 0 25px;}
+        form {
+            input,textarea{
+                background-color: rgba(82, 79, 79, 0.808);
+                border: none;
+                outline: none;
+            }
+            textarea {
+                height: 110px;
+                resize: none;
+            }
+            input::placeholder,textarea::placeholder  {
+                color: #fff
+            }
+            button{height: 43px;}
+        }
+    }
+}
+// contact
