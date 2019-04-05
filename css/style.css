@@ -69,8 +69,13 @@ body {
   width: 100%;
 }
 #carousel-example-generic .carousel-inner > .item .carousel-caption {
-  top: 250px;
+  top: 35%;
   line-height: 1.7 !important;
+}
+@media (max-height: 650px) {
+  #carousel-example-generic .carousel-inner > .item .carousel-caption {
+    top: 20%;
+  }
 }
 #carousel-example-generic .carousel-inner .carousel-control span.glyphicon-chevron-left, #carousel-example-generic .carousel-inner .carousel-control span.glyphicon-chevron-right {
   color: #27ae62;
@@ -231,6 +236,9 @@ body {
   padding: 70px 0;
   color: #eee0e0;
 }
+.workers .worker {
+  margin-bottom: 20px;
+}
 .workers .worker img {
   max-width: 70%;
   border-radius: 50%;
@@ -260,6 +268,81 @@ body {
 }
 .workers .worker i:nth-of-type(4) {
   background-color: #006699;
+}
+
+.subscribe {
+  padding: 70px 0;
+  border-radius: 0 0 70px 70px;
+  background: #cc2b5e;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #753a88, #cc2b5e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.subscribe h3 {
+  margin: 0 0 30px;
+  font-size: 30px;
+  color: #dab6b6;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .subscribe input {
+    margin-bottom: 20px;
+  }
+}
+
+.statistics {
+  background: url(../images/03.jpg) no-repeat center center fixed;
+  background-size: cover;
+  border-radius: 70px 70px 0 0;
+}
+.statistics .overlaay {
+  border-radius: 70px 70px 0 0;
+  padding: 70px 0;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+.statistics .overlaay .state {
+  color: #eee;
+}
+.statistics .overlaay .state span {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.statistics .overlaay .state i {
+  color: gray;
+}
+.statistics .overlaay .state i:hover {
+  color: #fff;
+}
+
+.our-skills {
+  padding: 70px 0;
+}
+.our-skills .progressing {
+  padding-top: 30px;
+}
+.our-skills .progressing .progress {
+  height: 40px;
+}
+.our-skills .progressing .progress .progress-bar {
+  line-height: 40px;
+  text-align: left;
+  text-indent: 20px;
+  font-size: 20px;
+  border-radius: 0 5px 5px 0;
+}
+.our-skills .progressing .progress .progress-bar > div {
+  overflow: hidden;
+}
+.our-skills .progressing .progress .progress-bar > div p {
+  width: calc(100% - 75px);
+  float: left;
+}
+.our-skills .progressing .progress .progress-bar > div span {
+  width: 75px;
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -94,8 +94,13 @@ body {
                 width: 100%;
             }
             .carousel-caption {
-                top: 250px;
+                top: 35%;
                 line-height: 1.7 !important;
+                @media (max-height:650px) {
+                    & {
+                        top:20%;
+                    }
+                }
             }
         }
         .carousel-control {
@@ -253,7 +258,7 @@ body {
     padding: 70px 0;
     color: rgb(238, 224, 224);
    .worker {
-       
+       margin-bottom: 20px;
         img {
             max-width: 70%;
             border-radius:50%; 
@@ -279,3 +284,80 @@ body {
     }
 }
 //workers
+//subscribe
+.subscribe {
+    padding: 70px 0;
+    border-radius: 0 0  70px 70px ;
+    background: #cc2b5e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    h3 {
+        margin: 0 0 30px;
+        font-size: 30px;
+        color: rgb(218, 182, 182);
+        font-weight: bold;
+    }
+    @media (max-width:768px) {
+        input {
+            margin-bottom: 20px;
+        }
+    }
+}
+//subscribe
+//statistics
+.statistics {
+    background: url(../images/03.jpg) no-repeat center center fixed;
+    background-size: cover;
+    border-radius: 70px 70px 0 0;
+    .overlaay {
+        border-radius: 70px 70px 0 0;
+        padding: 70px 0;
+        background-color: rgba(0, 0, 0, 0.664);
+        .state {
+            color: #eee;
+            span {
+                font-size: 25px;
+                margin-top:10px;
+                margin-bottom:10px;
+            }
+            i {
+                color:gray;
+                &:hover {
+                color: #fff;
+                }
+            }
+        }
+    }
+}
+
+//statistics
+//ourskills
+.our-skills {
+    padding: 70px 0;
+    .progressing {
+        padding-top:30px ;
+        .progress {
+            height: 40px;
+            .progress-bar {
+                line-height: 40px;
+                text-align: left;
+                text-indent: 20px;
+                font-size: 20px;
+                border-radius: 0 5px 5px 0;
+                & > div {
+                    overflow: hidden;
+                    p {
+                        width: calc(100% - 75px);
+                        float: left;
+                    }
+                    span {
+                        width: 75px;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}
+//ourskills
