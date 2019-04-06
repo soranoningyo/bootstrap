@@ -1,0 +1,17 @@
+body {
+    padding-top: 50px;
+}
+.navbar {
+    border-radius: 0;
+}
+.breadc {
+    background-color: #222;
+}
+.breadcrumb {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #222;
+}
+.breadcrumb li.active {
+    color: #eee
+}

@@ -1,0 +1,51 @@
+body {
+    padding-top: 50px;
+}
+.navbar {
+    border-radius: 0;
+}
+.breadc {
+    background-color: #222;
+}
+.breadcrumb {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #222;
+}
+.breadcrumb li.active {
+    color: #eee
+}
+.jumbotron {
+    border-radius: 0;
+}
+.jumbotron h1 {
+    font-size: 40px;
+}
+.jumbotron hr {
+    border-top: 2px solid #5d5656;
+    transition: width 0.5s ease-in-out;
+    width: 150px;
+}
+.jumbotron:hover hr {
+    width: 100%;
+}
+.jumbotron p {
+    margin-bottom: 10px;
+}
+p {
+    line-height: 1.85 !important;
+}
+@media (max-width:1199px) {
+    .img-responsive {
+        border-bottom: 2px solid #5d5656;
+    }
+}
+@media (max-width:991px) {
+    .img-responsive {
+        margin-bottom:10px; 
+    }
+    .infoo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}

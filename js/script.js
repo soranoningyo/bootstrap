@@ -12,7 +12,7 @@ $(document).ready(function () {
     if ($(window).height() > 500) {
         $(".carousel-inner > .item > img, .carousel-inner > .item > a > img").css("height", $(window).height());
     } else {
-        $(".carousel-inner > .item > img, .carousel-inner > .item > a > img").css("height",'600px');
+        $(".carousel-inner > .item > img, .carousel-inner > .item > a > img").css("height", '600px');
     }
 
 });
@@ -23,7 +23,7 @@ $(window).resize(function () {
     if ($(window).height() > 500) {
         $(".carousel-inner > .item > img, .carousel-inner > .item > a > img").css("height", $(window).height());
     } else {
-        $(".carousel-inner > .item > img, .carousel-inner > .item > a > img").css("height",'600px');
+        $(".carousel-inner > .item > img, .carousel-inner > .item > a > img").css("height", '600px');
     }
 });
 // carousel of testimonial
@@ -34,19 +34,24 @@ $('#Testimonialslider').carousel({
 });
 // select-box
 $('.gear-icon').click(function () {
-$('.selection-box').toggleClass('in');
+    'use strict';
+    $('.selection-box').toggleClass('in');
 });
 //
 $('.selection-box .color-box ul li:first-of-type').click(function () {
+    'use strict';
     $(':root').css('--maincolors', '#27ae62');
 });
 $('.selection-box .color-box ul li:nth-of-type(2)').click(function () {
+    'use strict';
     $(':root').css('--maincolors', '#c33e26');
 });
 $('.selection-box .color-box ul li:nth-of-type(3)').click(function () {
+    'use strict';
     $(':root').css('--maincolors', '#2778ae');
 });
 $('.selection-box .color-box ul li:nth-of-type(4)').click(function () {
+    'use strict';
     $(':root').css('--maincolors', '#ae2744');
 });
 //loading window
@@ -69,8 +74,9 @@ $(window).scroll(function () {
     }
 });
 $('.sctop').click(function () {
+    'use strict';
     $('html , body').animate({
-        scrollTop:0
+        scrollTop: 0
     }, 2000);
 });
 //wow
