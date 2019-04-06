@@ -73,3 +73,5 @@ $('.sctop').click(function () {
         scrollTop:0
     }, 2000);
 });
+//wow
+new WOW().init();

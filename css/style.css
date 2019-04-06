@@ -165,6 +165,7 @@
 
 .features {
   padding: 70px 0;
+  overflow: hidden;
 }
 .features .fleex {
   display: flex;
