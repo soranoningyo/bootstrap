@@ -49,6 +49,7 @@ $('.selection-box .color-box ul li:nth-of-type(3)').click(function () {
 $('.selection-box .color-box ul li:nth-of-type(4)').click(function () {
     $(':root').css('--maincolors', '#ae2744');
 });
+//loading window
 window.onload = function () {
     'use strict';
     $('.loading').delay(500).fadeOut(1500, function () {
@@ -56,3 +57,19 @@ window.onload = function () {
         $(this).remove();
     });
 };
+// scroll to top
+$(window).scroll(function () {
+    'use strict';
+    if ($(window).scrollTop() > 700) {
+        $('.sctop').fadeIn(1000);
+        $('.sctop i').slideDown(1000);
+    } else {
+        $('.sctop i').slideUp(1000);
+        $('.sctop').fadeOut(1000);
+    }
+});
+$('.sctop').click(function () {
+    $('html , body').animate({
+        scrollTop:0
+    }, 2000);
+});

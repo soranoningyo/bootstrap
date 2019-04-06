@@ -620,4 +620,30 @@ body {
   }
 }
 
+.sctop {
+  width: 50px;
+  height: 50px;
+  background-color: var(--maincolors);
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  line-height: 60px;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: none;
+}
+.sctop i {
+  display: none;
+  color: white;
+}
+.sctop:hover {
+  bottom: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
