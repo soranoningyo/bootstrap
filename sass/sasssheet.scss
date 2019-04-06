@@ -15,10 +15,6 @@
 $maincolor: #27ae62;
 $navcolor : #101b24;
 *{text-transform: capitalize}
-body {
-    height: 7000px;
-}
-
 // bootstrap nav
 
 .navbar { // main nav
@@ -26,8 +22,12 @@ body {
    
 }
 .navbar-inverse { //main nav style
-
-    background-color: rgba(0, 0, 0, 0.2);
+    @media (max-width:768px) {
+        & {
+            overflow: hidden;
+        }
+    }
+    // background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid $navcolor;
     
     .navbar-header {
@@ -49,6 +49,7 @@ body {
         > li {
             font-size: 17px;
             a {
+                padding: 10px;
                 color: #fff;
             }
             &:hover  {
@@ -85,6 +86,18 @@ body {
         }
     }
 }
+@media (min-height:520px) {
+    .navbar-fixed-top {
+        .navbar-collapse {
+            max-height: none
+        }
+    }
+    .navbar-fixed-bottom {
+        .navbar-collapse {
+            max-height: none
+        }
+    }
+}
 // bootstrap nav
 // bootstrap carousel (slider)
 #carousel-example-generic{
@@ -92,13 +105,15 @@ body {
         &> .item {
             &> img {
                 width: 100%;
+                @media (max-width:630px) {
+                }
             }
             .carousel-caption {
                 top: 35%;
                 line-height: 1.7 !important;
-                @media (max-height:650px) {
+                @media (max-height:500px) {
                     & {
-                        top:20%;
+                        top:200px;
                     }
                 }
             }
@@ -169,6 +184,11 @@ body {
     h2 {font-weight: bold;font-size: 35px;text-align: center;margin: 0 0 30px;}
     .carousel-inner {
         min-height: 170px;
+        @media (max-width:630px) {
+            & {
+                min-height: 310px;
+            }
+        }
         .item {
             q {
                 line-height: 1.7;
@@ -392,7 +412,7 @@ body {
 footer {
     background-color: #333;
     color: #cabebe;
-    padding: 30px 0;
+    padding: 30px 0 0;
     .row {&> div {margin-bottom: 30px;}}
     .social {
         h3 {
@@ -434,6 +454,16 @@ footer {
     }
     .blog h3 {
         padding-left: 15px
+    }
+    .copyright {
+        background-color: rgb(73, 73, 73);
+        padding: 15px 0;
+        p {
+           margin: 0;
+           span {
+               color: $maincolor;
+           }
+        }
     }
 }
 //footer

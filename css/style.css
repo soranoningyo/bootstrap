@@ -2,17 +2,17 @@
   text-transform: capitalize;
 }
 
-body {
-  height: 7000px;
-}
-
 .navbar {
   border-radius: 0px 0 0 40px;
 }
 
 .navbar-inverse {
-  background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid #101b24;
+}
+@media (max-width: 768px) {
+  .navbar-inverse {
+    overflow: hidden;
+  }
 }
 .navbar-inverse .navbar-header .navbar-brand {
   font-size: 25px;
@@ -31,6 +31,7 @@ body {
   font-size: 17px;
 }
 .navbar-inverse .navbar-nav > li a {
+  padding: 10px;
   color: #fff;
 }
 .navbar-inverse .navbar-nav > li:hover {
@@ -65,6 +66,15 @@ body {
   padding-left: 30px;
 }
 
+@media (min-height: 520px) {
+  .navbar-fixed-top .navbar-collapse {
+    max-height: none;
+  }
+
+  .navbar-fixed-bottom .navbar-collapse {
+    max-height: none;
+  }
+}
 #carousel-example-generic .carousel-inner > .item > img {
   width: 100%;
 }
@@ -72,9 +82,9 @@ body {
   top: 35%;
   line-height: 1.7 !important;
 }
-@media (max-height: 650px) {
+@media (max-height: 500px) {
   #carousel-example-generic .carousel-inner > .item .carousel-caption {
-    top: 20%;
+    top: 200px;
   }
 }
 #carousel-example-generic .carousel-inner .carousel-control span.glyphicon-chevron-left, #carousel-example-generic .carousel-inner .carousel-control span.glyphicon-chevron-right {
@@ -138,6 +148,11 @@ body {
 }
 .testi .carousel-inner {
   min-height: 170px;
+}
+@media (max-width: 630px) {
+  .testi .carousel-inner {
+    min-height: 310px;
+  }
 }
 .testi .carousel-inner .item q {
   line-height: 1.7;
@@ -376,7 +391,7 @@ body {
 footer {
   background-color: #333;
   color: #cabebe;
-  padding: 30px 0;
+  padding: 30px 0 0;
 }
 footer .row > div {
   margin-bottom: 30px;
@@ -419,6 +434,16 @@ footer ul li {
 }
 footer .blog h3 {
   padding-left: 15px;
+}
+footer .copyright {
+  background-color: #494949;
+  padding: 15px 0;
+}
+footer .copyright p {
+  margin: 0;
+}
+footer .copyright p span {
+  color: #27ae62;
 }
 
 /*# sourceMappingURL=style.css.map */

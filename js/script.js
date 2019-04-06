@@ -9,16 +9,22 @@ $('body > .carousel').carousel({
 $(document).ready(function () {
 
     'use strict';
-
-    $(".carousel-inner > .item > img, .carousel-inner > .item > a > img").css("height", $(window).height());
+    if ($(window).height() > 500) {
+        $(".carousel-inner > .item > img, .carousel-inner > .item > a > img").css("height", $(window).height());
+    } else {
+        $(".carousel-inner > .item > img, .carousel-inner > .item > a > img").css("height",'600px');
+    }
 
 });
 $(window).resize(function () {
 
     'use strict';
 
-    $(".carousel-inner > .item > img, .carousel-inner > .item > a > img").css("height", $(window).height());
-
+    if ($(window).height() > 500) {
+        $(".carousel-inner > .item > img, .carousel-inner > .item > a > img").css("height", $(window).height());
+    } else {
+        $(".carousel-inner > .item > img, .carousel-inner > .item > a > img").css("height",'600px');
+    }
 });
 // carousel of testimonial
 $('#Testimonialslider').carousel({
@@ -26,3 +32,4 @@ $('#Testimonialslider').carousel({
     interval: 2500
 
 });
+
