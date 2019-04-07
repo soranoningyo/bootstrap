@@ -197,11 +197,15 @@
 }
 
 .testi {
-  padding: 70px 0;
-  background-image: url("../images/tbg.jpg");
+  background: url("../images/testimonial.jpg") no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
   color: #fff;
+}
+.testi .overlay {
+  padding: 70px 0;
+  background-color: rgba(0, 0, 0, 0.712);
+  width: 100%;
+  height: 100%;
 }
 .testi h2 {
   font-weight: bold;
@@ -309,10 +313,15 @@
 }
 
 .workers {
-  background: url(../images/tbg.jpg) no-repeat center center fixed;
+  background: url(../images/workers.jpg) no-repeat center center fixed;
   background-size: cover;
-  padding: 70px 0;
   color: #eee0e0;
+}
+.workers .overlay {
+  padding: 70px 0;
+  background-color: rgba(36, 36, 36, 0.753);
+  width: 100%;
+  height: 100%;
 }
 .workers .worker {
   margin-bottom: 20px;
@@ -371,7 +380,7 @@
 }
 
 .statistics {
-  background: url(../images/03.jpg) no-repeat center center fixed;
+  background: url(../images/statistic.png) no-repeat center center fixed;
   background-size: cover;
   border-radius: 70px 70px 0 0;
 }
@@ -428,7 +437,7 @@
 }
 
 .contact-us {
-  background: url(../images/05.jpg) no-repeat center center fixed;
+  background: url(../images/contact.png) no-repeat center center fixed;
   background-size: cover;
   color: #fff;
 }

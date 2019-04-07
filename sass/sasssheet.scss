@@ -85,7 +85,6 @@ $navcolor : #101b24;
             overflow: hidden;
         }
     }
-    // background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid $navcolor;
     
     .navbar-header {
@@ -233,11 +232,15 @@ $navcolor : #101b24;
 // features
 // testimonials
 .testi {
-    padding: 70px 0;
-    background-image: url('../images/tbg.jpg');
+    background: url('../images/testimonial.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-attachment: fixed;
     color: #fff;
+    .overlay {
+        padding: 70px 0;
+        background-color: rgba(0, 0, 0, 0.712);
+        width: 100%;
+        height: 100%;
+    }
     h2 {font-weight: bold;font-size: 35px;text-align: center;margin: 0 0 30px;}
     .carousel-inner {
         min-height: 170px;
@@ -330,10 +333,15 @@ $navcolor : #101b24;
 //prices
 //workers
 .workers {
-    background: url(../images/tbg.jpg) no-repeat center center fixed;
+    background: url(../images/workers.jpg) no-repeat center center fixed;
     background-size: cover;
-    padding: 70px 0;
     color: rgb(238, 224, 224);
+    .overlay {
+        padding: 70px 0;
+        background-color: rgba(36, 36, 36, 0.753);
+        width: 100%;
+        height: 100%;
+    }
    .worker {
        margin-bottom: 20px;
         img {
@@ -384,7 +392,7 @@ $navcolor : #101b24;
 //subscribe
 //statistics
 .statistics {
-    background: url(../images/03.jpg) no-repeat center center fixed;
+    background: url(../images/statistic.png) no-repeat center center fixed;
     background-size: cover;
     border-radius: 70px 70px 0 0;
     .overlaay {
@@ -444,7 +452,7 @@ $navcolor : #101b24;
 //ourskills
 // contact
 .contact-us {
-    background: url(../images/05.jpg) no-repeat center center fixed;
+    background: url(../images/contact.png) no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     .ovarlaay {

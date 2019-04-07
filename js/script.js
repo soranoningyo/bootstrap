@@ -1,4 +1,11 @@
 /*global $ ,document ,window */
+// to contact
+$('#contact').click(function () {
+    'use strict';
+    $('html , body').animate({
+        scrollTop: $('.contact-us').offset().top
+    }, 2000);
+});
 // main caruosel
 
 $('body > .carousel').carousel({
